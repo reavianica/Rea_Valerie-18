@@ -419,10 +419,10 @@
     object-position: center center;
   }
 
-  /* TABLE NUMBER */
+  /* ─── TABLE NUMBER ─────────────────────────────────────────── */
   .table-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1.2rem;
     margin-bottom: 2rem;
   }
@@ -431,7 +431,7 @@
     background: rgba(123,47,255,0.15);
     border: 1px solid rgba(123,47,255,0.35);
     border-radius: 14px;
-    padding: 1.2rem 0.8rem;
+    padding: 1.2rem 1rem;
     text-align: center;
     cursor: default;
     position: relative;
@@ -486,7 +486,7 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    padding: 0.35rem 0.4rem;
+    padding: 0.45rem 0.6rem;
     border-bottom: 1px solid rgba(123,47,255,0.15);
     text-align: left;
   }
@@ -497,14 +497,17 @@
     font-weight: 700;
     color: var(--gold);
     min-width: 22px;
+    flex-shrink: 0;
     text-align: center;
   }
 
   .tg-name {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--white);
     font-weight: 400;
     text-align: left;
+    word-break: break-word;
+    line-height: 1.4;
   }
 
   /* EVENTS */
@@ -569,18 +572,6 @@
     font-size: 0.88rem;
     font-weight: 400;
     color: var(--white);
-  }
-
-  @media (max-width: 680px) {
-    .nav-links { display: none; }
-    .hamburger { display: flex; }
-    .countdown { gap: 0.6rem; }
-    .cd-unit { min-width: 65px; }
-    .map-img { height: 260px; }
-  }
-
-  @media (max-width: 400px) {
-    .table-grid { grid-template-columns: repeat(3, 1fr); }
   }
 
   /* GALLERY */
@@ -702,13 +693,6 @@
   }
   .lb-prev:hover, .lb-next:hover { background: rgba(123,47,255,0.65); }
 
-  @media (max-width: 680px) {
-    .gal-grid { grid-template-columns: repeat(2, 1fr); }
-    .gal-item.gal-landscape { grid-column: span 2; }
-    .lb-img { max-width: 82vw; }
-    .lb-prev, .lb-next { width: 40px; height: 40px; font-size: 1.4rem; }
-  }
-
   /* GALLERY FILTER BUTTONS */
   .gal-filters {
     display: flex;
@@ -743,7 +727,7 @@
     color: #1a0033;
   }
 
-  /* RSVP */
+  /* ─── RSVP ─────────────────────────────────────────────────── */
   #rsvp { background: rgba(0,0,0,0.1); }
 
   .rsvp-subtitle {
@@ -763,6 +747,7 @@
 
   .rsvp-input {
     flex: 1;
+    min-width: 0;                  /* prevents flex overflow on mobile */
     background: rgba(123,47,255,0.15);
     border: 1px solid rgba(123,47,255,0.45);
     border-radius: 12px;
@@ -777,6 +762,7 @@
   .rsvp-input:focus { border-color: var(--gold); }
 
   .rsvp-btn {
+    flex-shrink: 0;
     background: var(--gold);
     color: #1a0033;
     border: none;
@@ -788,11 +774,13 @@
     letter-spacing: 0.05em;
     cursor: pointer;
     transition: opacity 0.2s;
+    white-space: nowrap;
   }
   .rsvp-btn:hover { opacity: 0.85; }
 
   .rsvp-card {
-    max-width: 420px;
+    max-width: 480px;
+    width: 100%;
     margin: 0 auto;
     background: rgba(123,47,255,0.15);
     border: 1px solid rgba(123,47,255,0.4);
@@ -854,10 +842,11 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    padding: 0.5rem 1.2rem;
+    padding: 0.55rem 1.2rem;
     border-bottom: 1px solid rgba(123,47,255,0.12);
     font-size: 0.9rem;
     color: var(--white);
+    word-break: break-word;
   }
   .rsvp-companion:last-child { border-bottom: none; }
 
@@ -866,11 +855,13 @@
     font-weight: 700;
     color: var(--gold);
     min-width: 18px;
+    flex-shrink: 0;
     text-align: center;
   }
 
   .rsvp-not-found {
-    max-width: 420px;
+    max-width: 480px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     padding: 1.2rem;
@@ -880,4 +871,61 @@
     color: #f48fb1;
     font-size: 0.85rem;
     animation: fadeUp 0.3s ease;
+  }
+
+  /* ─── RESPONSIVE ────────────────────────────────────────────── */
+  @media (max-width: 680px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .countdown { gap: 0.6rem; }
+    .cd-unit { min-width: 65px; }
+    .map-img { height: 260px; }
+
+    /* Table: single column, full width on small phones */
+    .table-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .table-card {
+      padding: 1rem 0.9rem;
+    }
+
+    .tg-name {
+      font-size: 0.9rem;
+    }
+
+    /* Gallery */
+    .gal-grid .gal-item.gal-portrait {
+      flex: 0 1 calc(50% - 0.4rem);
+      min-width: 140px;
+    }
+    .gal-item.gal-landscape { width: 100%; }
+    .lb-img { max-width: 82vw; }
+    .lb-prev, .lb-next { width: 40px; height: 40px; font-size: 1.4rem; }
+
+    /* RSVP search bar stacks on very small screens */
+    .rsvp-search-wrap {
+      flex-direction: column;
+    }
+    .rsvp-btn {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+    .rsvp-companion {
+      font-size: 0.85rem;
+      padding: 0.55rem 0.9rem;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 680px) {
+    /* 2-column table grid for mid-size mobile (e.g. larger phones) */
+    .table-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .table-grid { grid-template-columns: 1fr; }
   }
