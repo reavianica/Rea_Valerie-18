@@ -386,6 +386,15 @@
   }
   .reminder-box strong { color: var(--gold); font-weight: 600; }
 
+  .reminder-entries {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .reminder-divider { margin: 0.5rem 0; }
+
   /* MAP ROW */
   .dl-map-row {
     padding: 1rem 0 1.2rem;
@@ -747,7 +756,7 @@
 
   .rsvp-input {
     flex: 1;
-    min-width: 0;                  /* prevents flex overflow on mobile */
+    min-width: 0;
     background: rgba(123,47,255,0.15);
     border: 1px solid rgba(123,47,255,0.45);
     border-radius: 12px;
@@ -881,7 +890,6 @@
     .cd-unit { min-width: 65px; }
     .map-img { height: 260px; }
 
-    /* Table: single column, full width on small phones */
     .table-grid {
       grid-template-columns: 1fr;
       gap: 1rem;
@@ -895,7 +903,6 @@
       font-size: 0.9rem;
     }
 
-    /* Gallery */
     .gal-grid .gal-item.gal-portrait {
       flex: 0 1 calc(50% - 0.4rem);
       min-width: 140px;
@@ -904,7 +911,6 @@
     .lb-img { max-width: 82vw; }
     .lb-prev, .lb-next { width: 40px; height: 40px; font-size: 1.4rem; }
 
-    /* RSVP search bar stacks on very small screens */
     .rsvp-search-wrap {
       flex-direction: column;
     }
@@ -920,7 +926,6 @@
   }
 
   @media (min-width: 481px) and (max-width: 680px) {
-    /* 2-column table grid for mid-size mobile (e.g. larger phones) */
     .table-grid {
       grid-template-columns: 1fr 1fr;
     }
