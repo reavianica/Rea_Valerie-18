@@ -42,9 +42,9 @@ const tableGuests = {
     'Florian Guanio',
     'Raymond Guanio',
     'Joshua Maniol',
-    'Emcee',
-    'Photo & Video Staff',
-    'Photo & Video Staff',
+    'John Paulo Cagande',
+    'Rizza Cagande',
+    'Jheriza Cagande',
   ],
   2: [
     'Helen Acedo',
@@ -60,8 +60,6 @@ const tableGuests = {
   ],
   3: [
     'Rizalina Ong',
-    'John Paulo Cagande',
-    'Rizza Cagande',
     'Boy Santiago',
     'Bella Santiago',
     'Joseph Santiago',
@@ -69,6 +67,8 @@ const tableGuests = {
     'Ophalyn Bagarino',
     'Rowena Luna',
     'Rhaizza Luna',
+    'Raphael Luna',
+    'Emily Monsayac',
   ],
   4: [
     'Princess Ellaine Ferran',
@@ -150,6 +150,9 @@ const tableGuests = {
     'Tee Jay Cabrera',
     'Anthony Ayubo',
     'Inis Bañola',
+    'Nila Garabiles',
+    'Jaymar Cruz',
+    'Peachy Cagandahan',
   ],
   11: [
     'Jenny Lyn Aduviso',
@@ -159,19 +162,21 @@ const tableGuests = {
     'Nerissa Conde',
     'Rosita De Guzman',
     'Gilda Crisologo',
-    'Alvin Crisologo',
     'Rhea Lyn Jalandoni',
     'Mia Ramos',
+    'Nestor Rocamora',
   ],
   12: [
     'Juleene Bautista',
     'Severino Bautista Jr.',
-    'Nila Garabiles',
     'Dra. Elizabeth Blanza',
     'Jonathan Blanza',
-    'Nestor Rocamora',
-    'Jaymar Cruz',
-    'Peachy Cagandahan',
+    'Emcee',
+    'Photo & Video Staff',
+    'Photo & Video Staff',
+    'Lights and Sound Staff',
+    'Lights and Sound Staff',
+    'Lights and Sound Staff',
   ],
 };
 
@@ -257,7 +262,7 @@ const songNames = [
   'Raph Daryll Celiz','Xian Qyrztenn Palang','Queen Evolet Costales',
   'Nicole Buenaventura','Sofia Cassandra Chua','Vian Lyca Pagador',
   'Celvestre Dumuguing','Christian Ryan Juban','Daisy Zulueta',
-  'Marisol Claveria','Alvin Crisologo','Tee Jay Cabrera'
+  'Marisol Claveria','Raphael Manuel Luna','Tee Jay Cabrera'
 ];
 buildList('list-songs', songNames);
 
@@ -337,10 +342,10 @@ const rsvpData = [
   { group: 'Navarro Family', seats: 3, members: ['Purificacion Navarro', 'Marlon Navarro', 'Myra Navarro'] },
   { group: 'Garcia Family', seats: 2, members: ['Elvie Garcia', 'Richelle Garcia'] },
   { group: 'Sampaga Family', seats: 1, members: ['Crispin Sampaga'] },
-  { group: 'Ong Family', seats: 2, members: ['Rizalina Ong', 'John Paulo Cagande', 'Rizza Cagande'] },
+  { group: 'Ong/Cagande Family', seats: 4, members: ['Rizalina Ong', 'John Paulo Cagande', 'Rizza Cagande', 'Jheriza Cagande'] },
   { group: 'Santiago Family', seats: 2, members: ['Boy Santiago', 'Bella Santiago'] },
   { group: 'Santiago Family', seats: 2, members: ['Joseph Santiago', 'Rachel Santiago'] },
-  { group: 'Luna Family', seats: 2, members: ['Rowena Luna', 'Rhaizza Luna'] },
+  { group: 'Luna Family', seats: 4, members: ['Rowena Luna', 'Rhaizza Luna', 'Raphael Manuel Luna', 'Emily Monsayac'] },
   { group: 'Individual', seats: 1, members: ['Ophalyn Bagarino'] },
   // NEIGHBOR SECTION
   { group: 'Aduviso Family', seats: 2, members: ['Jenny Lyn Aduviso', 'Ac Aduviso'] },
@@ -348,11 +353,11 @@ const rsvpData = [
   { group: 'Individual', seats: 1, members: ['Nerissa Conde'] },
   { group: 'Individual', seats: 1, members: ['Rosita De Guzman'] },
   // MOMMY'S FRIEND SECTION
-  { group: 'Crisologo Family', seats: 2, members: ['Gilda Crisologo', 'Alvin Crisologo'] },
   { group: 'Bautista Family', seats: 2, members: ['Juleene Bautista', 'Severino Bautista Jr.'] },
   { group: 'Guanio Family', seats: 2, members: ['Florian Guanio', 'Raymond Guanio'] },
   { group: 'Individual', seats: 1, members: ['Mia Ramos'] },
   { group: 'Individual', seats: 1, members: ['Rhea Lyn Jalandoni'] },
+  { group: 'Individual', seats: 1, members: ['Gilda Crisologo'] },
   // KUYA'S FRIEND SECTION
   { group: 'Individual', seats: 1, members: ['Joshua Maniaol'] },
   { group: 'Individual', seats: 1, members: ['Celvestre Dumaguing'] },
@@ -367,7 +372,7 @@ const rsvpData = [
   { group: 'Individual', seats: 1, members: ['Amiel Ryan Bicaldo'] },
   { group: 'Individual', seats: 1, members: ['Joshua Pangilinan'] },
   { group: 'Individual', seats: 1, members: ['Jordan King Santos'] },
-  { group: 'Individual', seats: 1, members: ['Tony Ashley Quityquit'] },
+  { group: 'Individual', seats: 1, members: ['Toney Ashley Quityquit'] },
   { group: 'Individual', seats: 1, members: ['Paul Aeron Guillermo'] },
   // NINANG/NINONG SECTION
   { group: 'Blanza Family', seats: 2, members: ['Dra. Elizabeth Blanza', 'Jonathan Blanza'] },
@@ -433,6 +438,11 @@ const rsvpData = [
   // SAMPAGA FAMILY (DEBUTANTE)
   { group: 'Sampaga Family', seats: 4, members: ['Rea Valerie Sampaga', 'Rey Vincent Sampaga', 'Pia Sampaga', 'Rey Sampaga'] },
   { group: 'Individual', seats: 1, members: ['Rea Vianica Sampaga'] },
+  // LUNA FAMILY (additional)
+  { group: 'Luna Family', seats: 1, members: ['Raphael Manuel Luna'] },
+  { group: 'Individual', seats: 1, members: ['Emily Monsayac'] },
+  // NEW GUESTS
+  { group: 'Ong/Cagande Family', seats: 1, members: ['Jheriza Cagande'] },
 ];
 
 function searchRSVP() {
