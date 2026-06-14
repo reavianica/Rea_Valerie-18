@@ -41,10 +41,10 @@ const tableGuests = {
     'Rey Sampaga',
     'Florian Guanio',
     'Raymond Guanio',
-    'Joshua Maniol',
     'John Paulo Cagande',
     'Rizza Cagande',
     'Jheriza Cagande',
+    'Emcee',
   ],
   2: [
     'Helen Acedo',
@@ -60,7 +60,7 @@ const tableGuests = {
   ],
   3: [
     'Rizalina Ong',
-    'Boy Santiago',
+    'Lucio Santiago',
     'Bella Santiago',
     'Joseph Santiago',
     'Rachel Santiago',
@@ -89,26 +89,24 @@ const tableGuests = {
     'Angela Bianca Bulagao',
     'Vynz Rhydon Dilidili',
     'Raelene Alolino',
-    'Raph Daryll Celiz',
     'Zhayana Arley Salamatin',
-    'Gyron Mckayle Padecio',
-    'Elijah Pineda',
+    'Cathline Joy Arias',
+    'Josephine Amirose Ambray',
   ],
   6: [
     'Jean Cezar',
     'Jean Alpha Marii Cezar',
     "Maam Jean's Helper",
     'Rhiana Ayade',
-    'Ma. Lourdes Kate Dimalanta',
     'Pope Geronimo Tapel',
     'Alezandro Sam Estuaria',
     'Kurt Gabriel Subong',
     'Xryzthea Calderon',
-    'Jeanette Javier',
+    'Gyron Mckayle Padecio',
+    'Jennah Joy Gaton',
   ],
   7: [
     'Xian Qyrztenn Palang',
-    'Queen Evolet Costales',
     'Jawea Ainsley Pajarillo',
     'Misha Annica Tugnao',
     'Charisse Pearson',
@@ -117,6 +115,7 @@ const tableGuests = {
     'Raphael Manuel Nueva España',
     'Charles Vhincent Salvador',
     'Anissa Louise Dhaena Cristi',
+    'Lord Spencer William Blasa IV',
   ],
   8: [
     'Czarina Mae Gorubat',
@@ -156,7 +155,7 @@ const tableGuests = {
   ],
   11: [
     'Jenny Lyn Aduviso',
-    'Ac Aduviso',
+    'Acee Aduviso',
     'Francisco Licup',
     'Vanessa Licup',
     'Nerissa Conde',
@@ -171,8 +170,8 @@ const tableGuests = {
     'Severino Bautista Jr.',
     'Dra. Elizabeth Blanza',
     'Jonathan Blanza',
-    'Emcee',
-    'Photo & Video Staff',
+    'Enrico Susi',
+    'Bhem Balliarbare Ico',
     'Photo & Video Staff',
     'Lights and Sound Staff',
     'Lights and Sound Staff',
@@ -198,46 +197,135 @@ tableNames.forEach((name, i) => {
   tableGrid.appendChild(card);
 });
 
-// EVENTS
+// EVENTS — FLOWERS (18 Roses)
 const roseNames = [
-  'Rey Vincent Sampaga','John Jeremiah Acedo','Charles Vhincent Salvador',
-  'Raphael Manuel Nueva España','Regie Cruz','Franz Daniel Juguilon',
-  'Nathan Valencia','Vynz Rhydon Dilidili','Marky Alacha',
-  'Gyron Mckayle Padecio','Pope Geronimo Tapel','Alezandro Sam Estuaria',
-  'Kurt Gabriel Subong','Jean Alpha Marii Cezar','John Paulo Cagande',
-  'Boy Santiago','Crispin Sampaga','Rey Sampaga'
+  'Rey Vincent Sampaga',
+  'John Jeremiah Acedo',
+  'Charles Vhincent Salvador',
+  'Raphael Manuel Nueva España',
+  'Regie Cruz',
+  'Franz Daniel Juguilon',
+  'Nathan Valencia',
+  'Vynz Rhydon Dilidili',
+  'Marky Alacha',
+  'Gyron Mckayle Padecio',
+  'Pope Geronimo Tapel',
+  'Alezandro Sam Estuaria',
+  'Kurt Gabriel Subong',
+  'Lord Spencer William Blasa IV',
+  'John Paulo Cagande',
+  'Lucio Santiago',
+  'Crispin Sampaga',
+  'Rey Sampaga',
 ];
+
+// EVENTS — WISHES (18 Candles)
 const wishNames = [
-  'Rea Vianica Sampaga','Czarina Mae Gorubat','Rhiana Ayade',
-  'Ma. Lourdes Kate Dimalanta','Mary Kyle Danielle Roxas','Misha Annica Tugnao',
-  'Jawea Ainsley Pajarillo','Reign Jesse Mayelle Roldan','Yvhanna Claire Espinoza',
-  'Princess Ellaine Ferran','Raelene Alolino','Xryzthea Calderon',
-  'Jeanette Javier','Rizalina Ong','Jean Cezar',
-  'Bella Santiago','Purificacion Navarro','Pia Sampaga'
+  'Rea Vianica Sampaga',
+  'Czarina Mae Gorubat',
+  'Rhiana Ayade',
+  'Charisse Pearson',
+  'Mary Kyle Danielle Roxas',
+  'Misha Annica Tugnao',
+  'Jawea Ainsley Pajarillo',
+  'Reign Jesse Mayelle Roldan',
+  'Yvhanna Claire Espinoza',
+  'Princess Ellaine Ferran',
+  'Raelene Alolino',
+  'Xryzthea Calderon',
+  'Hillary Evolet Macabutas',
+  'Rizalina Ong',
+  'Jean Cezar',
+  'Bella Santiago',
+  'Purificacion Navarro',
+  'Pia Sampaga',
 ];
+
+// EVENTS — GIFTS
 const giftNames = [
-  'Elvie Garcia','Elijah Pineda','Charisse Pearson',
-  'Gillan Siwa','Rheese Del Rosario','Rhaizza Luna',
-  'AC Aduviso','Hillary Evolet Macabutas','Mary Ann Porcel',
-  'Myra Navarro','Inis Bañola','Claizel Annit Basañez',
-  'Rizza Cagande','Jovita Blaya','Princess-Jurish Balatero',
-  'Rachel Santiago','Sofia Hernandez','Juleene Bautista'
+  'Elvie Garcia',
+  'Bhem Balliarbare Ico',
+  'Cathline Joy Arias',
+  'Gillan Siwa',
+  'Rheese Del Rosario',
+  'Rhaizza Luna',
+  'Acee Aduviso',
+  'Jennah Joy Gaton',
+  'Mary Ann Porcel',
+  'Myra Navarro',
+  'Inis Bañola',
+  'Claizel Annit Basañez',
+  'Rizza Cagande',
+  'Jovita Blaya',
+  'Princess-Jurish Balatero',
+  'Rachel Santiago',
+  'Sofia Hernandez',
+  'Juleene Bautista',
 ];
+
+// EVENTS — BLUE BILLS
 const billNames = [
-  'Helen Acedo','Susan Espiritu','Nila Garabiles',
-  'Peachy Cagandahan','Jaymar Cruz','Nestor Rocamora',
-  'Florian Guanio','Gilda Crisologo','Rosita De Guzman',
-  'Nerissa Conde','Dra. Elizabeth Blanza','Jenny Lyn Aduviso',
-  'Richard Gumabo','Richelle Garcia','Marlon Navarro',
-  'Atty. John Dwight Cruz','Dra. Rowena Luna','Anthony Ayubo'
+  'Helen Acedo',
+  'Susan Espiritu',
+  'Nila Garabiles',
+  'Peachy Cagandahan',
+  'Jaymar Cruz',
+  'Nestor Rocamora',
+  'Florian Guanio',
+  'Gilda Crisologo',
+  'Rosita De Guzman',
+  'Nerissa Conde',
+  'Dra. Elizabeth Blanza',
+  'Jenny Lyn Aduviso',
+  'Richard Gumabo',
+  'Richelle Garcia',
+  'Marlon Navarro',
+  'Atty. John Dwight Cruz',
+  'Dra. Rowena Luna',
+  'Anthony Ayubo',
 ];
+
+// EVENTS — SHOTS (note: original list skips #4, kept as-is per source)
 const shotNames = [
-  'Gerolito Acedo','Robert Blaya','Joseph Santiago',
-  'Severino Bautista Jr.','Amiel Ryan Bicaldo','Joshua Pangilinan',
-  'Jordan King Santos','Toney Ashley Quitiquit','Paul Aeron Guillermo',
-  'Joshua Maniaol','Ophalyn Bagarino','Rhea Lyn Jalandoni',
-  'Francisco Licup','Ma. Nona Salamanque','Raymond Guanio',
-  'Analiza Soliven','Marites Bechayda','Lilibeth Simon'
+  'Gerolito Acedo',
+  'Robert Blaya',
+  'Jonathan Blanza',
+  'Amiel Ryan Bicaldo',
+  'Joshua Pangilinan',
+  'Jordan King Santos',
+  'Toney Ashley Quitiquit',
+  'Paul Aeron Guillermo',
+  'Enrico Susi',
+  'Ophalyn Bagarino',
+  'Rhea Lyn Jalandoni',
+  'Francisco Licup',
+  'Ma. Nona Salamanque',
+  'Raymond Guanio',
+  'Analiza Soliven',
+  'Marites Bechayda',
+  'Lilibeth Simon',
+];
+
+// EVENTS — SONGS
+const songNames = [
+  'Mia Ramos',
+  'Anissa Louise Dhaena Cristi',
+  'Czarina Miel Saldon',
+  'Zhayana Arley Salamatin',
+  'Josephine Amirose Ambray',
+  'Angela Bianca Bulagao',
+  'Jhayron Troy Baynosa',
+  'Xian Qyrztenn Palang',
+  'Severino Bautista Jr.',
+  'Nicole Buenaventura',
+  'Sofia Cassandra Chua',
+  'Vian Lyca Pagador',
+  'Celvestre Dumaguing',
+  'Christian Ryan Juban',
+  'Daisy Zulueta',
+  'Marisol Claveria',
+  'Raphael Manuel Luna',
+  'Tee Jay Cabrera',
 ];
 
 function buildList(id, names) {
@@ -255,15 +343,6 @@ buildList('list-wishes', wishNames);
 buildList('list-gifts', giftNames);
 buildList('list-bills', billNames);
 buildList('list-shots', shotNames);
-
-const songNames = [
-  'Mia Ramos','Anissa Louise Dhaena Cristi','Czarina Miel Saldon',
-  'Zhayana Arley Salamatin','Angela Bianca Bulagao','Jhayron Troy Baynosa',
-  'Raph Daryll Celiz','Xian Qyrztenn Palang','Queen Evolet Costales',
-  'Nicole Buenaventura','Sofia Cassandra Chua','Vian Lyca Pagador',
-  'Celvestre Dumuguing','Christian Ryan Juban','Daisy Zulueta',
-  'Marisol Claveria','Raphael Manuel Luna','Tee Jay Cabrera'
-];
 buildList('list-songs', songNames);
 
 // GALLERY FILTER
@@ -343,12 +422,14 @@ const rsvpData = [
   { group: 'Garcia Family', seats: 2, members: ['Elvie Garcia', 'Richelle Garcia'] },
   { group: 'Sampaga Family', seats: 1, members: ['Crispin Sampaga'] },
   { group: 'Ong/Cagande Family', seats: 4, members: ['Rizalina Ong', 'John Paulo Cagande', 'Rizza Cagande', 'Jheriza Cagande'] },
-  { group: 'Santiago Family', seats: 2, members: ['Boy Santiago', 'Bella Santiago'] },
+  { group: 'Santiago Family', seats: 2, members: ['Lucio Santiago', 'Bella Santiago'] },
   { group: 'Santiago Family', seats: 2, members: ['Joseph Santiago', 'Rachel Santiago'] },
-  { group: 'Luna Family', seats: 4, members: ['Rowena Luna', 'Rhaizza Luna', 'Raphael Manuel Luna', 'Emily Monsayac'] },
+  { group: 'Luna Family', seats: 2, members: ['Rowena Luna', 'Rhaizza Luna'] },
+  { group: 'Individual', seats: 1, members: ['Raphael Manuel Luna'] },
+  { group: 'Individual', seats: 1, members: ['Emily Monsayac'] },
   { group: 'Individual', seats: 1, members: ['Ophalyn Bagarino'] },
   // NEIGHBOR SECTION
-  { group: 'Aduviso Family', seats: 2, members: ['Jenny Lyn Aduviso', 'Ac Aduviso'] },
+  { group: 'Aduviso Family', seats: 2, members: ['Jenny Lyn Aduviso', 'Acee Aduviso'] },
   { group: 'Licup Family', seats: 2, members: ['Francisco Licup', 'Vanessa Licup'] },
   { group: 'Individual', seats: 1, members: ['Nerissa Conde'] },
   { group: 'Individual', seats: 1, members: ['Rosita De Guzman'] },
@@ -359,7 +440,6 @@ const rsvpData = [
   { group: 'Individual', seats: 1, members: ['Rhea Lyn Jalandoni'] },
   { group: 'Individual', seats: 1, members: ['Gilda Crisologo'] },
   // KUYA'S FRIEND SECTION
-  { group: 'Individual', seats: 1, members: ['Joshua Maniaol'] },
   { group: 'Individual', seats: 1, members: ['Celvestre Dumaguing'] },
   { group: 'Individual', seats: 1, members: ['Christian Ryan Juban'] },
   { group: 'Individual', seats: 1, members: ['Atty. John Dwight Cruz'] },
@@ -372,7 +452,7 @@ const rsvpData = [
   { group: 'Individual', seats: 1, members: ['Amiel Ryan Bicaldo'] },
   { group: 'Individual', seats: 1, members: ['Joshua Pangilinan'] },
   { group: 'Individual', seats: 1, members: ['Jordan King Santos'] },
-  { group: 'Individual', seats: 1, members: ['Toney Ashley Quityquit'] },
+  { group: 'Individual', seats: 1, members: ['Tony Ashley Quityquit'] },
   { group: 'Individual', seats: 1, members: ['Paul Aeron Guillermo'] },
   // NINANG/NINONG SECTION
   { group: 'Blanza Family', seats: 2, members: ['Dra. Elizabeth Blanza', 'Jonathan Blanza'] },
@@ -380,6 +460,7 @@ const rsvpData = [
   { group: 'Individual', seats: 1, members: ['Peachy Cagandahan'] },
   { group: 'Individual', seats: 1, members: ['Jaymar Cruz'] },
   { group: 'Individual', seats: 1, members: ['Nestor Rocamora'] },
+  { group: 'Individual', seats: 1, members: ['Bhem Balliarbare Ico'] },
   // OFFICEMATES SECTION
   { group: 'Blaya Family', seats: 2, members: ['Jovita Blaya', 'Robert Blaya'] },
   { group: 'Individual', seats: 1, members: ['Susan Espiritu'] },
@@ -393,30 +474,30 @@ const rsvpData = [
   { group: 'Individual', seats: 1, members: ['Marisol Claveria'] },
   { group: 'Individual', seats: 1, members: ['Tee Jay Cabrera'] },
   { group: 'Individual', seats: 1, members: ['Anthony Ayubo'] },
-  // VAL'S FRIEND (DIVINE)
+  { group: 'Individual', seats: 1, members: ['Enrico Susi'] },
+  // VAL'S FRIEND (DIVINE) SECTION
   { group: "Val's Friend — Divine", seats: 1, members: ['Anissa Louise Dhaena Cristi'] },
   { group: "Val's Friend — Divine", seats: 1, members: ['Charles Vhincent Salvador'] },
   { group: "Val's Friend — Divine", seats: 1, members: ['Raphael Manuel Nueva España'] },
   { group: "Val's Friend — Divine", seats: 1, members: ['Hillary Evolet Macabutas'] },
   { group: "Val's Friend — Divine", seats: 1, members: ['Mary Kyle Danielle Roxas'] },
   { group: "Val's Friend — Divine", seats: 1, members: ['Charisse Pearson'] },
-  // VAL'S FRIEND (VDPS)
+  { group: "Val's Friend — Divine", seats: 1, members: ['Jennah Joy Gaton'] },
+  // VAL'S FRIEND (VDPS) SECTION
   { group: "Val's Friend — VDPS", seats: 1, members: ['Misha Annica Tugnao'] },
   { group: "Val's Friend — VDPS", seats: 1, members: ['Jawea Ainsley Pajarillo'] },
   { group: "Val's Friend — VDPS", seats: 1, members: ['Xian Qyrztenn Palang'] },
-  { group: "Val's Friend — VDPS", seats: 1, members: ['Queen Evolet Costales'] },
-  // VAL'S FRIEND (JUANSCI)
+  { group: "Val's Friend — VDPS", seats: 1, members: ['Lord Spencer William Blasa IV'] },
+  // VAL'S FRIEND (JUANSCI) SECTION
   { group: 'Cezar Family', seats: 3, members: ['Jean Cezar', 'Jean Alpha Marii Cezar', "Maam Jean's Helper"] },
   { group: "Val's Friend — JuanSci", seats: 1, members: ['Rhiana Ayade'] },
-  { group: "Val's Friend — JuanSci", seats: 1, members: ['Ma. Lourdes Kate Dimalanta'] },
   { group: "Val's Friend — JuanSci", seats: 1, members: ['Pope Geronimo Tapel'] },
   { group: "Val's Friend — JuanSci", seats: 1, members: ['Alezandro Sam Estuaria'] },
   { group: "Val's Friend — JuanSci", seats: 1, members: ['Kurt Gabriel Subong'] },
   { group: "Val's Friend — JuanSci", seats: 1, members: ['Xryzthea Calderon'] },
   { group: "Val's Friend — JuanSci", seats: 1, members: ['Gyron Mckayle Padecio'] },
   { group: "Val's Friend — JuanSci", seats: 1, members: ['Elijah Pineda'] },
-  { group: "Val's Friend — JuanSci", seats: 1, members: ['Jeanette Javier'] },
-  // VAL'S FRIEND (LITEXIAN)
+  // VAL'S FRIEND (LITEXIAN) SECTION
   { group: "Val's Friend — Litexian", seats: 1, members: ['Princess Ellaine Ferran'] },
   { group: "Val's Friend — Litexian", seats: 1, members: ['Reign Jesse Mayelle Roldan'] },
   { group: "Val's Friend — Litexian", seats: 1, members: ['Marky Alacha'] },
@@ -435,14 +516,11 @@ const rsvpData = [
   { group: "Val's Friend — Litexian", seats: 1, members: ['Raelene Alolino'] },
   { group: "Val's Friend — Litexian", seats: 1, members: ['Raph Daryll Celiz'] },
   { group: "Val's Friend — Litexian", seats: 1, members: ['Princess-Jurish Balatero'] },
+  { group: "Val's Friend — Litexian", seats: 1, members: ['Cathline Joy Arias'] },
+  { group: "Val's Friend — Litexian", seats: 1, members: ['Josephine Amirose Ambray'] },
   // SAMPAGA FAMILY (DEBUTANTE)
   { group: 'Sampaga Family', seats: 4, members: ['Rea Valerie Sampaga', 'Rey Vincent Sampaga', 'Pia Sampaga', 'Rey Sampaga'] },
   { group: 'Individual', seats: 1, members: ['Rea Vianica Sampaga'] },
-  // LUNA FAMILY (additional)
-  { group: 'Luna Family', seats: 1, members: ['Raphael Manuel Luna'] },
-  { group: 'Individual', seats: 1, members: ['Emily Monsayac'] },
-  // NEW GUESTS
-  { group: 'Ong/Cagande Family', seats: 1, members: ['Jheriza Cagande'] },
 ];
 
 function searchRSVP() {
