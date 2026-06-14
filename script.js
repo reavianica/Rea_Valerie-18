@@ -285,11 +285,12 @@ const billNames = [
   'Anthony Ayubo',
 ];
 
-// EVENTS — SHOTS (note: original list skips #4, kept as-is per source)
+// EVENTS — SHOTS
 const shotNames = [
   'Gerolito Acedo',
   'Robert Blaya',
   'Jonathan Blanza',
+  'Joseph Santiago',
   'Amiel Ryan Bicaldo',
   'Joshua Pangilinan',
   'Jordan King Santos',
